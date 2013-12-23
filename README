@@ -1,0 +1,27 @@
+Arduino library for using the RF remote/receiver that comes with G35 Christmas lights.
+
+Teardown
+--------
+Open the green controller box attached to the string of lights. Mine had triangular
+security screws, but I was able to jam a flathead in there and turn them out. The
+receiver board is a tiny circuit board that must be desoldered from the main board.
+
+Setup
+-----
+The receiver board takes GND and VCC (3.3V). It also needs a small length of wire
+connected as an antenna. The DATA pin gets connected to pin 2 of your Arduino Uno.
+Technically you should level-shift this to 5V, but I had success without shifting.
+
+          +----------------+                         +------+
+          |     Arduino    | +3.3v               VCC |      |           \
+          |       Uno      |-------------------------|  RF  |          __|
+          |                |-------------------------|      |        /   |\
+          |                | GND                 GND |      |        \__/  |
+          |                |                         |      |             /
+          |                | Pin 2              DATA |      |-----------/
+          |                |-------------------------|      | ANT
+          +----------------+                         +------+
+
+Usage
+-----
+See the included example sketch.
