@@ -22,6 +22,7 @@ Technically you should level-shift this to 5V, but I had success without shiftin
           |                |-------------------------|      | ANT
           +----------------+                         +------+
 
-Usage
------
-See the included example sketch.
+Install & Usage
+---------------
+Clone this repo into your Arduino Libraries directory. Open the IDE and look at
+the included example sketch.

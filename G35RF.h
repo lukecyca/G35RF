@@ -6,7 +6,6 @@
 #define G35RF_FUNCTION  0x5a
 
 void G35RF_enable();
-void G35RF_dump();
 int G35RF_get_command();
 
 #endif
